@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Konversi Suhu</h2>
+
+      <!-- Formulir Masukan Suhu -->
+      <form id="temperatureForm">
+        <label for="temperature">Suhu:</label>
+        <input
+          type="text"
+          id="temperature"
+          name="temperature"
+          placeholder="Masukkan suhu..."
+          required
+        />
+
+        <label for="unit">Unit:</label>
+        <select id="unit" name="unit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+
+        <button id="resetButton" class="button button-secondary">Reset</button>
+        <button id="reverseButton" class="button button-secondary">
+          Reverse
+        </button>
+        <button type="submit" class="button button-primary">Konversi</button>
+      </form>
+
+      <!-- Tabel Hasil Konversi -->
+      <div>
+        <h3>Hasil Konversi</h3>
+        <table id="resultTable">
+          <thead>
+            <tr>
+              <th>Input Suhu</th>
+              <th>Rumus</th>
+              <th>Hasil Konversi</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- Tabel Contoh Penyelesaian -->
+      <div>
+        <h3>Contoh Penyelesaian</h3>
+        <table id="exampleTable">
+          <thead>
+            <tr>
+              <th>Unit Asal</th>
+              <th>Input Contoh</th>
+              <th>Rumus</th>
+              <th>Hasil Contoh</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- Paragraf Penyelesaian -->
+      <div>
+        <h3>Tugas Penyelesaian</h3>
+        <p id="solutionParagraph"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
